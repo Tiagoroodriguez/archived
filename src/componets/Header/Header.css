@@ -1,0 +1,222 @@
+header {
+    top: 0;
+    width:100%;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.desktop-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "search logo cuenta";
+    background: var(--color-primario);
+    height: 100px;
+    margin: 0px 50px;
+}
+
+.desktop-header-logo {
+    display: flex;
+    color: #fff;
+    align-self: center;
+    justify-self: center;
+    grid-area: logo;
+}
+.desktop-header-logo h1 {
+    font-family: "EB Garamond", serif;
+    font-weight: lighter;
+}
+.desktop-header-logo h2 {
+    font-family: "EB Garamond", serif;
+    font-weight: lighter;
+    font-size: 20px;
+    position: relative;
+}
+
+.search-container {
+    display: flex;
+    align-self: center;
+    justify-self: self-start;
+    grid-area: search;
+}
+
+.search-container input[type="text"] {
+    padding: 8px 20px 8px 8px; 
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid var(--color-secundario);
+    background: var(--color-primario);
+    width: 150px;
+    color: #fff;
+}
+
+.search-container input[type="text"]:focus {
+    outline: none;
+    border-bottom: 1px solid #ffff;
+}
+
+.search-container i {
+    color: #fff;
+    position: relative;
+    align-self: center;
+    right: 18px;
+    cursor: pointer;   
+}
+ 
+
+.desktop-header-cuenta {
+    display: flex;
+    align-self: center;
+    justify-self: self-end;
+    color: #fff;
+    grid-area: cuenta;
+}
+.desktop-header-cuenta-item {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.desktop-header-cuenta a {
+    text-decoration: none;
+    color: #fff;
+    font-size: small;
+}
+.desktop-header-cuenta a:hover {
+    color: var(--color-secundario);
+    text-decoration-line: underline;
+}
+.desktop-header-cuenta div {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.desktop-header-cuenta i {
+    cursor: pointer;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*NAV*/
+.desktop-nav-lista{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: var(--color-primario);
+    top: 0 ;
+    width: 100%;
+    text-align: center;
+}
+
+.desktop-nav-item {
+    display: inline-block;
+}
+
+.desktop-nav-item a {
+    display: block;
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+}
+
+.desktop-nav-item a:hover {
+    color: rgb(139, 138, 138);
+    border-bottom: 1px solid var(--color-secundario);
+    border-top: 1px solid var(--color-secundario);
+}
+
+.mobile-header {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .desktop-header, .desktop-nav {
+        display: none;
+    }
+    
+    .mobile-header{
+        display: block;
+        margin: 0 auto;
+        height: 90px;
+        color: #fff;
+        background: transparent;
+    }
+    
+    .mobile-nav{
+        --state-close: scale(0);
+        --state-hamburguer:scale(1);
+        --state-menu: translateY(-100%);
+    
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        grid-template-columns: repeat(2, max-content);
+    }
+    
+    .mobile-nav:target{
+        --state-menu: translateY(0);
+        --state-close: scale(1);
+        --state-hamburguer:scale(0);
+
+    }
+    
+    .mobile-nav-logo{
+        width: 50px;
+        height: 50px;
+        z-index: 1;
+        margin: 20px 30px;
+    }
+    
+    .mobile-nav-open, .mobile-nav-close{
+        cursor: pointer;
+        grid-column: -2/-1;
+        grid-row: 1/2;
+        transition: .4s transform;
+        margin-right: 30px;
+        scale: 2;
+    }
+    
+    .mobile-nav-open{
+        transform: var(--state-hamburguer);
+    }
+    
+    .mobile-nav-close{
+        transform: var(--state-close);
+    }
+    
+    .mobile-nav-lista{
+        background: var(--color-primario);
+        position: absolute;
+        top: 0;
+        bottom: 100px;
+        left: 0;
+        right: 0;
+        padding: 0;
+    
+        display: grid;
+        align-content: center;
+        justify-content: flex-end;
+        gap: 20px;
+        padding-right: 30px;
+    
+        transform: var(--state-menu);
+        transition: .3s transform;
+    }
+    
+    .mobile-nav-item{
+        list-style: none;
+        justify-self: end;
+    }
+    
+    .mobile-nav-link{
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+    
+}
+
+    

@@ -1,0 +1,35 @@
+.slider-container {
+    width: 100%;
+    height: auto;
+    place-content: center;
+
+}
+
+.slider-frame {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto 0;
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: slide 30s infinite cubic-bezier(0.55, 0.45, 0.37, 0.92);
+}
+
+.slider-frame li {
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {margin-left: 0%;}
+    100% {margin-left: -300%;} /* Movimiento continuo */
+}

@@ -1,0 +1,89 @@
+.iniciar-sesion {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 100px;
+}
+
+.datos-container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.datos-container input {
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px var(--color-secundario);
+    border-radius: none;
+}
+.datos-container input:focus {
+    outline: none;
+    border-bottom: solid 1px red;
+}
+
+
+.datos-container label {
+    margin-top: 20px;
+}
+
+.boton-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .boton-container span {
+    margin-top: 10px;
+  }
+
+  .boton-container span a:hover {
+    color: var(--color-secundario);
+  }
+
+.boton-crear-cuenta {
+    display: flex;
+    width: 250px;
+    height: 40px;
+    margin: 30px;
+    margin-bottom: 0;
+    z-index: 1000;
+    cursor: pointer;
+
+    justify-content: center;
+    align-items: center;
+    
+
+    background: linear-gradient(to bottom right, #d43c2e, #932b21);
+    border-radius: 5px;
+    color: #FFFFFF;
+    outline: transparent;
+
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+}
+    
+.boton-crear-cuenta a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background: none;
+    font-size: small;
+}
+
+.boton-crear-cuenta:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(247, 68, 68, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+  
+  .boton-crear-cuenta:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 71, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+
