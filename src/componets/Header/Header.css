@@ -3,6 +3,7 @@ header {
     width:100%;
     z-index: 1000;
     overflow: hidden;
+    position: sticky;
 }
 
 .desktop-header {
@@ -10,7 +11,7 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "search logo cuenta";
     background: var(--color-primario);
-    height: 100px;
+    height: 70px;
     margin: 0px 50px;
 }
 
@@ -132,6 +133,10 @@ header {
 }
 
 @media (max-width: 768px) {
+    header {
+        position: static;
+    }
+
     .desktop-header, .desktop-nav {
         display: none;
     }
@@ -142,7 +147,6 @@ header {
         height: 90px;
         color: #fff;
         background: transparent;
-        
     }
     
     .mobile-nav{
@@ -167,6 +171,7 @@ header {
         height: 50px;
         z-index: 20;
         margin: 20px 30px;
+
     }
     
     .mobile-nav-open, .mobile-nav-close{
@@ -177,6 +182,7 @@ header {
         margin-right: 30px;
         scale: 2;
         z-index: 25;
+
     }
     
     .mobile-nav-open{
@@ -209,7 +215,7 @@ header {
     
     .mobile-nav-item{
         list-style: none;
-        border-bottom: solid 1px var(--color-secundario);
+        border-bottom: 1px solid rgba(49, 49, 49, 0.596);
         
     }
     

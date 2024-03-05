@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Footer } from "../../componets/Footer/Footer";
 import { Header } from "../../componets/Header/Header";
 import { Producto } from '../../componets/Producto/Producto';
+import { BotonNormal } from '../../componets/BotonNormal/BotonNormal';
 import './Tienda.css';
 
 export function Tienda() {
@@ -17,10 +18,20 @@ export function Tienda() {
                     </div>
 
                     <nav className="tienda-filtros">
-                        <i className="bi bi-caret-right"></i><Link to="#">Todos los productos</Link>
-                        <i className="bi bi-caret-right"></i><Link to="#">222 Collection</Link>
-                        <i className="bi bi-caret-right"></i><Link to="#">Exclusive Collection</Link>
-                        <i className="bi bi-caret-right"></i><Link to="#">Exclusive Collection</Link>
+                        <BotonNormal
+                        textoBoton="Todos los productos"
+                        linkBoton="#"
+                        />
+                        <BotonNormal
+                        textoBoton="Archived Collection"
+                        linkBoton="#"
+                        />
+                        <BotonNormal
+                        textoBoton="444 Collection"
+                        linkBoton="#"
+                        />
+
+                        
                     </nav>
 
                     <div className="productos-container">

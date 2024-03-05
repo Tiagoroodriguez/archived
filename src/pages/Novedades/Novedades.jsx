@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import { Producto } from '../../componets/Producto/Producto';
+import { BotonColor } from '../../componets/BotonColor/BotonColor';
 import './Novedades.css';
 
 export function Novedades() {
@@ -33,11 +33,10 @@ export function Novedades() {
                 
             </div>
 
-            <div className="boton-container">
-                <div className="boton-todos-productos">
-                    <Link to="/tienda">Ver todos los productos</Link>
-                </div>
-            </div>
+            <BotonColor
+            textoBoton="Ver todos los productos"
+            linkBoton="tienda"
+            />
 
         </section>
     )

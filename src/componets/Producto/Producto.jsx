@@ -9,6 +9,9 @@ export function Producto({nombreProducto, categoriaProducto, precioProducto, ima
 
             <div className="producto-imagen">
                 <a href="#"><img src={`./src/assets/images/${imagenProducto}`} alt={`imagen del producto ${nombreProducto}`} /></a>
+                <div className="descuento-container">
+                    <span className='descuento'>10%</span>
+                </div>
             </div>
 
             <div className="producto-informacion">

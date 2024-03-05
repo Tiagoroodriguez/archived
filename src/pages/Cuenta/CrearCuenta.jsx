@@ -1,5 +1,6 @@
 import { Footer } from "../../componets/Footer/Footer";
 import { Header } from "../../componets/Header/Header";
+import { BotonColor } from "../../componets/BotonColor/BotonColor";
 import { Link } from 'react-router-dom';
 import './CrearCuenta.css';
 
@@ -33,12 +34,11 @@ export function CrearCuenta() {
                         <input type="password" className="contraseña-repetir" />
                     </div>
 
-                    <div className="boton-container">
-                        <div className="boton-crear-cuenta">
-                            <a href="#">Crear cuenta</a>
-                        </div>
-                        <span>¿Ya tenés una cuenta? <Link to="/acount/login">Iniciá sesión</Link></span>
-                    </div>
+                    <BotonColor
+                    textoBoton="Crear cuenta"
+                    linkBoton="#"
+                    />
+                    <span>¿Ya tenés una cuenta? <Link to="/acount/login">Iniciá sesión</Link></span>
                     
                 </form>
             </section>

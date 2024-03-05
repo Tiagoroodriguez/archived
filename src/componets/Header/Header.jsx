@@ -25,7 +25,7 @@ export function Header() {
                 <ul className='desktop-nav-lista'>
                     <li className='desktop-nav-item'><Link to="/">Inicio</Link></li>
                     <li className='desktop-nav-item'><Link to="/tienda">Tienda</Link></li>
-                    <li className='desktop-nav-item'><Link to="#">Guia de talles</Link></li>
+                    <li className='desktop-nav-item'><Link to="/guia-de-talles">Guia de talles</Link></li>
                     <li className='desktop-nav-item'><Link to="#">Contacto</Link></li>
                 </ul>
             </nav>
@@ -35,7 +35,7 @@ export function Header() {
                     <ul className='mobile-nav-lista'>
                         <li className='mobile-nav-item'><Link to="/" className='mobile-nav-link'>Inicio</Link></li>
                         <li className='mobile-nav-item'><Link to="/tienda" className='mobile-nav-link'>Tienda</Link></li>
-                        <li className='mobile-nav-item'><Link to="#" className='mobile-nav-link'>Guia de talles</Link></li>
+                        <li className='mobile-nav-item'><Link to="/guia-de-talles" className='mobile-nav-link'>Guia de talles</Link></li>
                         <li className='mobile-nav-item'><Link to="#" className='mobile-nav-link'>Contacto</Link></li>
                         
                         <li className='mobile-nav-item cuenta'><Link to="/acount/register" className='mobile-cuenta-item'>Crear cuenta</Link></li>

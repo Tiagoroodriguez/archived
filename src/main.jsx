@@ -7,6 +7,7 @@ import { CrearCuenta } from './pages/Cuenta/CrearCuenta';
 import { IniciarSesion } from './pages/Cuenta/IniciarSesion';
 import { NotFount } from './pages/Not Found/NotFound';
 import { Tienda } from './pages/Tienda/Tienda';
+import { GuiaTalles } from './pages/Guia Talles/GuiaTalles';
 
 
 const router = createBrowserRouter([{
@@ -25,6 +26,10 @@ const router = createBrowserRouter([{
   {
     path:'/tienda',
     element: <Tienda/>,
+  },
+  {
+    path:'/guia-de-talles',
+    element: <GuiaTalles/>,
   },
 ]);
 

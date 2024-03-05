@@ -1,5 +1,6 @@
 import { Footer } from "../../componets/Footer/Footer";
 import { Header } from "../../componets/Header/Header";
+import { BotonColor } from "../../componets/BotonColor/BotonColor";
 import { Link } from 'react-router-dom';
 import './IniciarSesion.css';
 
@@ -21,12 +22,11 @@ export function IniciarSesion() {
 
                     </div>
 
-                    <div className="boton-container">
-                        <div className="boton-crear-cuenta">
-                            <a href="#">Iniciar Sesión</a>
-                        </div>
-                        <span>¿No tenés cuenta? <Link to="/acount/register">Crear cuenta</Link></span>
-                    </div>
+                    <BotonColor
+                    textoBoton="Iniciar Sesión"
+                    linkBoton="#"
+                    />
+                    <span>¿No tenés cuenta? <Link to="/acount/register">Crear cuenta</Link></span>
                     
                 </form>
             </section>
