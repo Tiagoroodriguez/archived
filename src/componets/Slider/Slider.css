@@ -15,9 +15,9 @@
 .slider-frame ul {
     display: flex;
     padding: 0;
-    width: 400%;
+    width: 500%;
 
-    animation: slide 30s infinite cubic-bezier(0.55, 0.45, 0.37, 0.92);
+    animation: slide 50s infinite linear;
 }
 
 .slider-frame li {
@@ -31,5 +31,5 @@
 
 @keyframes slide {
     0% {margin-left: 0%;}
-    100% {margin-left: -300%;} /* Movimiento continuo */
+    100% {margin-left: -400%;} /* Movimiento continuo */
 }

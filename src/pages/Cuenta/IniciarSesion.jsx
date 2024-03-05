@@ -1,5 +1,6 @@
 import { Footer } from "../../componets/Footer/Footer";
 import { Header } from "../../componets/Header/Header";
+import { Link } from 'react-router-dom';
 import './IniciarSesion.css';
 
 
@@ -24,7 +25,7 @@ export function IniciarSesion() {
                         <div className="boton-crear-cuenta">
                             <a href="#">Iniciar Sesión</a>
                         </div>
-                        <span>¿No tenés cuenta? <a href="">Crear cuenta</a></span>
+                        <span>¿No tenés cuenta? <Link to="/acount/register">Crear cuenta</Link></span>
                     </div>
                     
                 </form>

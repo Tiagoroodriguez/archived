@@ -13,6 +13,7 @@ footer {
 
 .desktop-footer-logo {
     display: flex;
+    margin-bottom: 10px;
 }
 
 .desktop-footer-redes {
@@ -32,7 +33,7 @@ footer {
 }
 
 .desktop-footer-icon {
-    padding: 0 9px;
+    margin-right: 19px;
 }
 
 

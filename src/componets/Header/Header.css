@@ -142,13 +142,14 @@ header {
         height: 90px;
         color: #fff;
         background: transparent;
+        
     }
     
     .mobile-nav{
         --state-close: scale(0);
         --state-hamburguer:scale(1);
         --state-menu: translateY(-100%);
-    
+
         display: grid;
         justify-content: space-between;
         align-items: center;
@@ -159,13 +160,12 @@ header {
         --state-menu: translateY(0);
         --state-close: scale(1);
         --state-hamburguer:scale(0);
-
     }
     
     .mobile-nav-logo{
         width: 50px;
         height: 50px;
-        z-index: 1;
+        z-index: 20;
         margin: 20px 30px;
     }
     
@@ -176,6 +176,7 @@ header {
         transition: .4s transform;
         margin-right: 30px;
         scale: 2;
+        z-index: 25;
     }
     
     .mobile-nav-open{
@@ -197,17 +198,26 @@ header {
     
         display: grid;
         align-content: center;
-        justify-content: flex-end;
+        text-align: end;
         gap: 20px;
-        padding-right: 30px;
+        padding-right: 25px;
     
         transform: var(--state-menu);
         transition: .3s transform;
+        z-index: 15;
     }
     
     .mobile-nav-item{
         list-style: none;
-        justify-self: end;
+        border-bottom: solid 1px var(--color-secundario);
+        
+    }
+    
+    .mobile-cuenta-item{
+        text-decoration: none;
+        position: relative;
+        font-size: 1.2rem;
+        background: none;
     }
     
     .mobile-nav-link{
@@ -215,8 +225,12 @@ header {
         text-decoration: none;
         font-size: 1.2rem;
         letter-spacing: 2px;
+        background: none;
     }
     
+    .cuenta {
+        margin-top: 100px;
+    }
 }
 
     

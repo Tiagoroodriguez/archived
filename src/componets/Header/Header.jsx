@@ -37,8 +37,11 @@ export function Header() {
                         <li className='mobile-nav-item'><Link to="/tienda" className='mobile-nav-link'>Tienda</Link></li>
                         <li className='mobile-nav-item'><Link to="#" className='mobile-nav-link'>Guia de talles</Link></li>
                         <li className='mobile-nav-item'><Link to="#" className='mobile-nav-link'>Contacto</Link></li>
+                        
+                        <li className='mobile-nav-item cuenta'><Link to="/acount/register" className='mobile-cuenta-item'>Crear cuenta</Link></li>
+                        <li className='mobile-nav-item'><Link to="/acount/login" className='mobile-cuenta-item'>Iniciar sesión</Link></li>
                     </ul>
-
+                    
                     <a href="#nav" className='mobile-nav-open'><i className='bi bi-list mobile-nav-icon'></i></a>
                     <a href="#" className='mobile-nav-close'><i className='bi bi-x-lg mobile-nav-icon'></i></a>
                 </nav>

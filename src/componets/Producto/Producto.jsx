@@ -1,4 +1,5 @@
 import './Producto.css';
+import { Link } from "react-router-dom";
 
 
 
@@ -11,9 +12,9 @@ export function Producto({nombreProducto, categoriaProducto, precioProducto, ima
             </div>
 
             <div className="producto-informacion">
-                <a href="#"><span className='producto-nombre'>{`"${nombreProducto}"`}</span></a>
-                <a href="#"><span className='producto-categoria'>{categoriaProducto}</span></a>
-                <a href="#"><span className='producto-precio'>{`$${precioProducto}`}</span></a>
+                <Link to="#" className='producto-nombre'>{`"${nombreProducto}"`}</Link>
+                <Link to="#" className='producto-categoria'>{categoriaProducto}</Link>
+                <Link to="#" className='producto-precio'>{`$${precioProducto}`}</Link>
             </div>
         </div>
     )
