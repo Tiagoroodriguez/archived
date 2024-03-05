@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import { Footer } from "../../componets/Footer/Footer";
-import { Header } from "../../componets/Header/Header";
-import { Producto } from '../../componets/Producto/Producto';
-import { BotonNormal } from '../../componets/BotonNormal/BotonNormal';
+import { Footer } from "../../components/Footer/Footer";
+import { Header } from "../../components/Header/Header";
+import { Producto } from '../../components/Producto/Producto';
+import { BotonNormal } from '../../components/BotonNormal/BotonNormal';
 import './Tienda.css';
 
 export function Tienda() {
@@ -10,11 +10,10 @@ export function Tienda() {
         <>
             <Header/>      
             <main>
-            
                 <section className='tienda'>
 
                     <div className="mensaje-container">
-                        <span>"No somos una marca, somos un movimiento"</span>
+                        <span>" LA CALIDAD NO TIENE PRECIO, PERO SI NOMBRE "</span>
                     </div>
 
                     <nav className="tienda-filtros">
@@ -30,8 +29,6 @@ export function Tienda() {
                         textoBoton="444 Collection"
                         linkBoton="#"
                         />
-
-                        
                     </nav>
 
                     <div className="productos-container">

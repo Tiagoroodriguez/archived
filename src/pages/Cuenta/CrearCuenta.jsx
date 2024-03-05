@@ -1,6 +1,6 @@
-import { Footer } from "../../componets/Footer/Footer";
-import { Header } from "../../componets/Header/Header";
-import { BotonColor } from "../../componets/BotonColor/BotonColor";
+import { Footer } from "../../components/Footer/Footer";
+import { Header } from "../../components/Header/Header";
+import { BotonColor } from "../../components/BotonColor/BotonColor";
 import { Link } from 'react-router-dom';
 import './CrearCuenta.css';
 

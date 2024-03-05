@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export function Producto({nombreProducto, categoriaProducto, precioProducto, imagenProducto}) { 
     return (
-        <div className="container">
+        <article className="container">
 
             <div className="producto-imagen">
                 <a href="#"><img src={`./src/assets/images/${imagenProducto}`} alt={`imagen del producto ${nombreProducto}`} /></a>
@@ -19,6 +19,6 @@ export function Producto({nombreProducto, categoriaProducto, precioProducto, ima
                 <Link to="#" className='producto-categoria'>{categoriaProducto}</Link>
                 <Link to="#" className='producto-precio'>{`$${precioProducto}`}</Link>
             </div>
-        </div>
+        </article>
     )
 }

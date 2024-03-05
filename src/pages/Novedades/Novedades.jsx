@@ -1,5 +1,5 @@
-import { Producto } from '../../componets/Producto/Producto';
-import { BotonColor } from '../../componets/BotonColor/BotonColor';
+import { Producto } from '../../components/Producto/Producto';
+import { BotonColor } from '../../components/BotonColor/BotonColor';
 import './Novedades.css';
 
 export function Novedades() {

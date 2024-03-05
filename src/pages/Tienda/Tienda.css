@@ -36,8 +36,9 @@
     .tienda-filtros{
         overflow-y: auto;
         height: 70px;
-        border-bottom: solid 2px var(--color-secundario);
+        border-bottom: 1px solid rgba(49, 49, 49, 0.596);
         scrollbar-width: none;
+        margin-inline: 20px;
 
     }
 

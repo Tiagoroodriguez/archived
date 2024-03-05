@@ -1,13 +1,13 @@
-import { Footer } from '../../componets/Footer/Footer';
-import { Header } from '../../componets/Header/Header';
-import { Tabla } from '../../componets/Tabla/Tabla';
+import { Footer } from '../../components/Footer/Footer';
+import { Header } from '../../components/Header/Header';
+import { Tabla } from '../../components/Tabla/Tabla';
 import './GuiaTalles.css';
 
 export function GuiaTalles() {
     return(
         <>
             <Header />
-            <div className='guia-container'>
+            <section className='guia-container'>
                 <Tabla 
                     producto={'Remera "Archived"'}
                     sAncho={"10"}
@@ -37,7 +37,7 @@ export function GuiaTalles() {
                     xlAncho={"10"}
                     xlLargo={"20"}
                 />
-            </div>
+            </section>
 
             <span className='mensaje-talles'>"Todas las medidas estan expresadas en centimetros"</span>
             <Footer />
