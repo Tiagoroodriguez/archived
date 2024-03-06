@@ -2,12 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-import { Inicio } from './pages/Inicio/Inicio'
-import { CrearCuenta } from './pages/Cuenta/CrearCuenta';
-import { IniciarSesion } from './pages/Cuenta/IniciarSesion';
-import { NotFount } from './pages/Not Found/NotFound';
-import { Tienda } from './pages/Tienda/Tienda';
-import { GuiaTalles } from './pages/Guia Talles/GuiaTalles';
+import { Inicio } from './layout/Inicio/Inicio'
+import { CrearCuenta } from './layout/Cuenta/CrearCuenta';
+import { IniciarSesion } from './layout/Cuenta/IniciarSesion';
+import { NotFount } from './layout/Not Found/NotFound';
+import { Tienda } from './layout/Tienda/Tienda';
+import { GuiaTalles } from './layout/Guia Talles/GuiaTalles';
+import { DetalleProducto } from './layout/Detalle Producto/DetalleProducto';
+import { Contacto } from './layout/Contacto/Contacto';
 
 
 const router = createBrowserRouter([{
@@ -31,6 +33,15 @@ const router = createBrowserRouter([{
     path:'/guia-de-talles',
     element: <GuiaTalles/>,
   },
+  {
+    path:'/contacto',
+    element: <Contacto/>,
+  },
+  {
+    path:'/detalle-producto',
+    element: <DetalleProducto/>,
+  },
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

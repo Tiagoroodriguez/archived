@@ -26,17 +26,17 @@ export function Header() {
                     <li className='desktop-nav-item'><Link to="/">Inicio</Link></li>
                     <li className='desktop-nav-item'><Link to="/tienda">Tienda</Link></li>
                     <li className='desktop-nav-item'><Link to="/guia-de-talles">Guia de talles</Link></li>
-                    <li className='desktop-nav-item'><Link to="#">Contacto</Link></li>
+                    <li className='desktop-nav-item'><Link to="/contacto">Contacto</Link></li>
                 </ul>
             </nav>
             <div className='mobile-header'>
                 <nav className='mobile-nav mobile-container' id='nav'>
-                    <img src="./src/assets/images/archived-logo-blaco.png" alt="" className='mobile-nav-logo' />
+                    <img src="public/images/archived-logo-blaco.png" alt="" className='mobile-nav-logo' />
                     <ul className='mobile-nav-lista'>
                         <li className='mobile-nav-item'><Link to="/" className='mobile-nav-link'>Inicio</Link></li>
                         <li className='mobile-nav-item'><Link to="/tienda" className='mobile-nav-link'>Tienda</Link></li>
                         <li className='mobile-nav-item'><Link to="/guia-de-talles" className='mobile-nav-link'>Guia de talles</Link></li>
-                        <li className='mobile-nav-item'><Link to="#" className='mobile-nav-link'>Contacto</Link></li>
+                        <li className='mobile-nav-item'><Link to="/contacto" className='mobile-nav-link'>Contacto</Link></li>
                         
                         <li className='mobile-nav-item cuenta'><Link to="/acount/register" className='mobile-cuenta-item'>Crear cuenta</Link></li>
                         <li className='mobile-nav-item'><Link to="/acount/login" className='mobile-cuenta-item'>Iniciar sesión</Link></li>
