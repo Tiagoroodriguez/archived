@@ -31,7 +31,7 @@ export function Header() {
             </nav>
             <div className='mobile-header'>
                 <nav className='mobile-nav mobile-container' id='nav'>
-                    <img src="./public/svg/archived-logo-blaco.svg" alt="" className='mobile-nav-logo' />
+                    <img src="/svg/archived-logo-blaco.svg" alt="" className='mobile-nav-logo' />
                     <ul className='mobile-nav-lista'>
                         <li className='mobile-nav-item'><Link to="/" className='mobile-nav-link'>Inicio</Link></li>
                         <li className='mobile-nav-item'><Link to="/tienda" className='mobile-nav-link'>Tienda</Link></li>

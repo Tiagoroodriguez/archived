@@ -9,7 +9,7 @@ export function Producto({nombreProducto, categoriaProducto, precioProducto, ima
 
             <div className="producto-imagen">
                 <Link to="/detalle-producto">
-                    <img src={`public/images/${imagenProducto}`} alt={`imagen del producto ${nombreProducto}`} />
+                    <img src={`/images/${imagenProducto}`} alt={`imagen del producto ${nombreProducto}`} />
                 </Link>
                 <div className="descuento-container">
                     <span className='descuento'>10%</span>
