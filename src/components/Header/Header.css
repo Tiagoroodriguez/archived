@@ -22,16 +22,6 @@ header {
     justify-self: center;
     grid-area: logo;
 }
-.desktop-header-logo h1 {
-    font-family: "EB Garamond", serif;
-    font-weight: lighter;
-}
-.desktop-header-logo h2 {
-    font-family: "EB Garamond", serif;
-    font-weight: lighter;
-    font-size: 20px;
-    position: relative;
-}
 
 .search-container {
     display: flex;

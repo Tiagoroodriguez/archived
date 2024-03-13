@@ -28,6 +28,7 @@
     display: inline-block;
 }
 
+
 .descuento-container {
     position: relative;
     background: none;
@@ -40,7 +41,6 @@
     color: brown;
     visibility: hidden;
 }
-
 
 
 .producto-informacion {

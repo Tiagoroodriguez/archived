@@ -15,7 +15,7 @@ export function IniciarSesion() {
                     <div className="datos-container">
                     
                         <label>Correo electronico</label>
-                        <input type="text" className="mail" />
+                        <input type='email' className="mail" />
 
                         <label>Contraseña</label>
                         <input type="password" className="contraseña" />

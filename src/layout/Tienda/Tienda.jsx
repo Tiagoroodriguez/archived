@@ -1,8 +1,10 @@
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import { Footer } from "../../components/Footer/Footer";
 import { Header } from "../../components/Header/Header";
 import { Producto } from '../../components/Producto/Producto';
 import { BotonNormal } from '../../components/BotonNormal/BotonNormal';
+import { InformacionEnvios } from "../../components/InformacionEnvios/InformacionEnvios";
+
 import './Tienda.css';
 
 export function Tienda() {
@@ -13,7 +15,7 @@ export function Tienda() {
                 <section className='tienda'>
 
                     <div className="mensaje-container">
-                        <span>" LA CALIDAD NO TIENE PRECIO, PERO SI NOMBRE "</span>
+                        <span>LA CALIDAD NO TIENE PRECIO, PERO SI NOMBRE</span>
                     </div>
 
                     <nav className="tienda-filtros">
@@ -75,6 +77,7 @@ export function Tienda() {
                         
                     </div>
                 </section>
+                <InformacionEnvios />
             </main>
             <Footer/>  
         </>

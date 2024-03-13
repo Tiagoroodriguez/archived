@@ -1,12 +1,12 @@
-import { Producto } from '../../components/Producto/Producto';
-import { BotonColor } from '../../components/BotonColor/BotonColor';
+import { Producto } from '../Producto/Producto';
+import { BotonColor } from '../BotonColor/BotonColor';
 import './Novedades.css';
 
 export function Novedades() {
     return (
         <section className='novedades-section'>
             <div className="mensaje-container">
-                <span>"No somos una marca, somos un movimiento"</span>
+                <span>No somos una marca, somos un movimiento</span>
             </div>
 
             <div className="novedades-container">

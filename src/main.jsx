@@ -8,8 +8,8 @@ import { IniciarSesion } from './layout/Cuenta/IniciarSesion';
 import { NotFount } from './layout/Not Found/NotFound';
 import { Tienda } from './layout/Tienda/Tienda';
 import { GuiaTalles } from './layout/Guia Talles/GuiaTalles';
-import { DetalleProducto } from './layout/Detalle Producto/DetalleProducto';
 import { Contacto } from './layout/Contacto/Contacto';
+import { DetalleProducto } from './components/Detalle Producto/DetalleProducto';
 
 
 const router = createBrowserRouter([{
@@ -40,7 +40,7 @@ const router = createBrowserRouter([{
   {
     path:'/detalle-producto',
     element: <DetalleProducto/>,
-  },
+  }
   
 ]);
 

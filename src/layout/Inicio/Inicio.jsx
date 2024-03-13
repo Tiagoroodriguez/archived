@@ -1,7 +1,9 @@
 import { Footer } from "../../components/Footer/Footer";
 import { Header } from "../../components/Header/Header";
+import { InformacionEnvios } from "../../components/InformacionEnvios/InformacionEnvios";
 import { Slider } from "../../components/Slider/Slider";
-import { Novedades } from "../../layout/Novedades/Novedades";
+import { Novedades } from "../../components/Novedades/Novedades";
+
 
 export function Inicio() {
     return(
@@ -10,6 +12,7 @@ export function Inicio() {
             <main>
                 <Slider />
                 <Novedades />
+                <InformacionEnvios />
             </main>
         <Footer />
         </>

@@ -1,3 +1,4 @@
+import { LogoTexto } from '../LogoTexto/LogoTexto';
 import './Footer.css';
 
 export function Footer() {
@@ -7,8 +8,7 @@ export function Footer() {
 
                 <div className='desktop-footer-redes'>
                     <div className='desktop-footer-logo'>
-                        <h1>Archived</h1>
-                        <h2>®</h2>
+                        <LogoTexto/>
                     </div>
                     
                     <div>
@@ -17,6 +17,11 @@ export function Footer() {
                         <a href="#" className='desktop-footer-icon'><i className='bi bi-tiktok' alt="TikTok icono"></i></a>
                         <a href="#" className='desktop-footer-icon'><i className='bi bi-instagram' alt="Instagram icono"></i></a>
                     </div>
+                </div>
+
+                <div className="suscribirse">
+                    <span>Suscrbite para saber nuestro proximo drop</span>
+                    <input type="text" placeholder='ejemplo@gmail.com' className='mail-sub'/>
                 </div>
             </div>
         </footer>

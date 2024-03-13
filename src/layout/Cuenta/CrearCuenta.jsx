@@ -22,9 +22,9 @@ export function CrearCuenta() {
                         <input type="text" className="nombre-apellido" />
 
                         <label>Correo electronico</label>
-                        <input type="text" className="mail" />
+                        <input type='email' placeholder="ejemplo@gmail.com" className="mail" />
 
-                        <label>Telefono</label>
+                        <label>Teléfono</label>
                         <input type="text" className="telefono" />
 
                         <label>Contraseña</label>
