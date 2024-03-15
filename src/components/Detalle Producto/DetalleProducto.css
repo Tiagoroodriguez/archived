@@ -7,19 +7,26 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
-    margin-block: 25px;
 }
 /*-------------------------------------------------------------*/
 .img-container {
     width: 60%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    aspect-ratio: 3/4;
     gap: 5px;
+
 }
 .img {
-    background: red;
-    grid-gap: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+.img img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /*-------------------------------------------------------------*/
@@ -73,8 +80,11 @@
     width: 30px;
     height: 30px;
     border: solid 1px var(--color-secundario);
+    cursor: pointer;
 }
-
+.boton-talle:hover {
+    border: solid 1px #932b21;
+}
 .boton-talle:focus {
     border: solid 1px #932b21;
 }
@@ -135,4 +145,34 @@
   
 .agregar-carrito:not([disabled]):hover {
     box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 71, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+/*-------------------------------------------------------------*/
+@media (max-width: 768px) {
+    .section-dc {
+        margin-bottom: 50px ;
+        margin-inline: 30px;
+    }
+    .detalle-container {
+        flex-direction: column;
+    }
+    .img-container {
+        display: flex;
+        aspect-ratio:unset;
+        width: 100%;
+        overflow: scroll;
+        gap:0;
+        scroll-snap-type: x mandatory;
+
+        
+    }
+    .img {
+        width: 100%;
+        object-fit: cover;
+        overflow:unset;
+        scroll-snap-align: center;
+    }
+    .informacion-container {
+        width: 100%;
+    }
 }

@@ -6,7 +6,7 @@ export function Novedades() {
     return (
         <section className='novedades-section'>
             <div className="mensaje-container">
-                <span>No somos una marca, somos un movimiento</span>
+                <p>"No somos una marca, somos un movimiento"</p>
             </div>
 
             <div className="novedades-container">

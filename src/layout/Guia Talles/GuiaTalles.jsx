@@ -39,7 +39,7 @@ export function GuiaTalles() {
                 />
             </section>
 
-            <span className='mensaje-talles'>"Todas las medidas estan expresadas en centimetros"</span>
+            <p className='mensaje-talles'>"Todas las medidas estan expresadas en centimetros"</p>
             <Footer />
         </>
     )

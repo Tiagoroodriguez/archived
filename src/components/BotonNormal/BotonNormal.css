@@ -1,7 +1,6 @@
 .boton-normal-container {
     display: flex;
     width: auto;
-
 }
   
 .boton-normal {
@@ -16,6 +15,7 @@
   
     background: rgba(32, 32, 32, 0.596);
     border-radius: 5px;
+    border: none;
     outline: 1px solid rgba(49, 49, 49, 0.596);
   
     user-select: none;
@@ -24,21 +24,17 @@
     white-space: nowrap;
 }
       
-.boton-normal a {
-    text-decoration: none;
-    text-transform: uppercase;
-    background: none;
-    font-size: small;
-}
-  
 .boton-normal:not([disabled]):focus {
     background: rgba(239, 71, 71, 0.5);
-    outline: 1px solid rgba(255, 105, 105, 0.685);
-    color: rgba(250, 34, 34, 0.5);
+    outline: 1px solid rgba(255, 105, 105, 0.685); 
 }
     
 .boton-normal:not([disabled]):hover {
     background: rgba(239, 71, 71, 0.5);
     outline: 1px solid rgba(255, 105, 105, 0.685);
-    color: rgba(250, 34, 34, 0.5);
+}
+
+.boton-normal::selection{
+    background: rgba(239, 71, 71, 0.5);
+    outline: 1px solid rgba(255, 105, 105, 0.685);
 }

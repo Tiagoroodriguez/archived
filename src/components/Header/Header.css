@@ -4,23 +4,25 @@ header {
     z-index: 1000;
     overflow: hidden;
     position: sticky;
+    background: transparent;
+    backdrop-filter: blur(10px);
 }
 
 .desktop-header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "search logo cuenta";
-    background: var(--color-primario);
+    background: none;
     height: 70px;
     margin: 0px 50px;
 }
 
 .desktop-header-logo {
     display: flex;
-    color: #fff;
     align-self: center;
     justify-self: center;
     grid-area: logo;
+    background: none;
 }
 
 .search-container {
@@ -28,6 +30,7 @@ header {
     align-self: center;
     justify-self: self-start;
     grid-area: search;
+    background: none;
 }
 
 .search-container input[type="text"] {
@@ -35,7 +38,7 @@ header {
     font-size: 14px;
     border: none;
     border-bottom: 1px solid var(--color-secundario);
-    background: var(--color-primario);
+    background: none;
     width: 150px;
     color: #fff;
 }
@@ -50,7 +53,8 @@ header {
     position: relative;
     align-self: center;
     right: 18px;
-    cursor: pointer;   
+    cursor: pointer;  
+    background: none; 
 }
  
 
@@ -60,11 +64,13 @@ header {
     justify-self: self-end;
     color: #fff;
     grid-area: cuenta;
+    background: none;
 }
 .desktop-header-cuenta-item {
     padding: 15px;
     display: flex;
     align-items: center;
+    background: none;
 }
 
 .desktop-header-cuenta a {
@@ -88,12 +94,15 @@ header {
 }
 
 /*NAV*/
+.desktop-nav {
+    background: none;
+}
 .desktop-nav-lista{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: var(--color-primario);
+    background: none;
     top: 0 ;
     width: 100%;
     text-align: center;
@@ -101,6 +110,7 @@ header {
 
 .desktop-nav-item {
     display: inline-block;
+    background: none;
 }
 
 .desktop-nav-item a {
@@ -110,6 +120,7 @@ header {
     text-decoration: none;
     border-bottom: 1px solid transparent;
     border-top: 1px solid transparent;
+    background: none;
 }
 
 .desktop-nav-item a:hover {
@@ -125,6 +136,7 @@ header {
 @media (max-width: 768px) {
     header {
         position: static;
+        backdrop-filter: none;
     }
 
     .desktop-header, .desktop-nav {

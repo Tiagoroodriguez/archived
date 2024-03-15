@@ -7,6 +7,60 @@ import { InformacionEnvios } from "../../components/InformacionEnvios/Informacio
 
 import './Tienda.css';
 
+const productos = [
+    { 
+        id: 1,
+        nombre: "Destroy", 
+        categoria: "Remera oversize", 
+        precio: "20.000", 
+        cantindad: 5,
+        descuento: 0,
+        coleccion: "Archived Collection",
+        imagen: "download.webp" 
+    },
+    { 
+        id: 2,
+        nombre: "Archived", 
+        categoria: "Remera oversize", 
+        precio: "40.000", 
+        cantindad: 5,
+        descuento: 0,
+        coleccion: "Archived Collection", 
+        imagen: "download.webp" 
+    },
+    { 
+        id: 3,
+        nombre: "Lover", 
+        categoria: "Remera oversize", 
+        precio: "10.000", 
+        cantindad: 5,
+        descuento: 0,
+        coleccion: "Archived Collection", 
+        imagen: "download.webp" 
+    },
+    { 
+        id: 4,
+        nombre: "Destini", 
+        categoria: "Remera oversize", 
+        precio: "50.000", 
+        cantindad: 5,
+        descuento: 0,
+        coleccion: "Archived Collection", 
+        imagen: "download.webp" 
+    },
+    { 
+        id: 5,
+        nombre: "Invertion", 
+        categoria: "Remera oversize", 
+        precio: "15.000", 
+        cantindad: 5,
+        descuento: 0,
+        coleccion: "444 Collecion", 
+        imagen: "download.webp" 
+    },
+    
+  ];
+  
 export function Tienda() {
     return (
         <>
@@ -15,65 +69,30 @@ export function Tienda() {
                 <section className='tienda'>
 
                     <div className="mensaje-container">
-                        <span>LA CALIDAD NO TIENE PRECIO, PERO SI NOMBRE</span>
+                        <p>LA CALIDAD NO TIENE PRECIO, PERO SI NOMBRE</p>
                     </div>
 
                     <nav className="tienda-filtros">
                         <BotonNormal
                         textoBoton="Todos los productos"
-                        linkBoton="#"
                         />
                         <BotonNormal
                         textoBoton="Archived Collection"
-                        linkBoton="#"
                         />
                         <BotonNormal
                         textoBoton="444 Collection"
-                        linkBoton="#"
                         />
                     </nav>
 
                     <div className="productos-container">
-                        <Producto 
-                        nombreProducto="Destroy" 
-                        categoriaProducto="Remera oversize"
-                        precioProducto={"20.000"}
-                        imagenProducto="download.webp"
-                        />
-
-                        <Producto 
-                        nombreProducto="Archived" 
-                        categoriaProducto="Remera oversize"
-                        precioProducto={"40.000"}
-                        imagenProducto="download.webp"
-                        />
-
-                        <Producto 
-                        nombreProducto="Lover" 
-                        categoriaProducto="Remera oversize"
-                        precioProducto={"10.000"}
-                        imagenProducto="download.webp"
-                        />
-                        <Producto 
-                        nombreProducto="Destroy" 
-                        categoriaProducto="Remera oversize"
-                        precioProducto={"20.000"}
-                        imagenProducto="download.webp"
-                        />
-
-                        <Producto 
-                        nombreProducto="Archived" 
-                        categoriaProducto="Remera oversize"
-                        precioProducto={"40.000"}
-                        imagenProducto="download.webp"
-                        />
-
-                        <Producto 
-                        nombreProducto="Lover" 
-                        categoriaProducto="Remera oversize"
-                        precioProducto={"10.000"}
-                        imagenProducto="download.webp"
-                        />
+                        {productos.map((producto) => (
+                            <Producto key={producto.id}
+                                nombreProducto={producto.nombre} 
+                                categoriaProducto={producto.categoria}
+                                precioProducto={producto.precio}
+                                imagenProducto={producto.imagen}
+                            />
+                        ))}
                         
                     </div>
                 </section>

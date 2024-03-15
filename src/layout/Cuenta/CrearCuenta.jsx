@@ -13,7 +13,7 @@ export function CrearCuenta() {
                 <form action="post" className='crear-cuenta'>
 
                     <div className="texto-container">
-                        <span>Comprá más rapido y llevá el control de tus pedidos</span>
+                        <p>Comprá más rapido y llevá el control de tus pedidos</p>
                     </div>
 
                     
@@ -21,7 +21,7 @@ export function CrearCuenta() {
                         <label>Nombre y Apellido</label>
                         <input type="text" className="nombre-apellido" />
 
-                        <label>Correo electronico</label>
+                        <label>Correo electrónico</label>
                         <input type='email' placeholder="ejemplo@gmail.com" className="mail" />
 
                         <label>Teléfono</label>

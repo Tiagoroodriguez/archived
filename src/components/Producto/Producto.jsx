@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 
 export function Producto({nombreProducto, categoriaProducto, precioProducto, imagenProducto}) { 
+
     return (
         <article className="container">
 

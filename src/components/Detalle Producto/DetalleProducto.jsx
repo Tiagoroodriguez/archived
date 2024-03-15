@@ -2,6 +2,7 @@ import { Footer } from "../Footer/Footer";
 import { Header } from "../Header/Header";
 import { Link } from "react-router-dom";
 import './DetalleProducto.css'
+import { InformacionEnvios } from "../InformacionEnvios/InformacionEnvios";
 
 
 export function DetalleProducto() {
@@ -12,10 +13,10 @@ export function DetalleProducto() {
             <div className="detalle-container">
 
                 <div className="img-container">
-                    <div className="img"></div>
-                    <div className="img"></div>
-                    <div className="img"></div>
-                    <div className="img"></div>
+                    <img className="img" src="/images/prueba-frente.webp"/>
+                    <img className="img" src="/images/prueba-detras.webp"/>
+                    <img className="img" src="/images/prueba-detalle.jpg"/>
+                    <img className="img" src="/images/prueba-muestra.webp"/>
                 </div>
 
                 <div className="informacion-container">
@@ -48,6 +49,7 @@ export function DetalleProducto() {
                 
             </div>
         </section>
+        <InformacionEnvios />
         <Footer />
         </>
     )

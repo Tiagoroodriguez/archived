@@ -10,36 +10,59 @@ import { Tienda } from './layout/Tienda/Tienda';
 import { GuiaTalles } from './layout/Guia Talles/GuiaTalles';
 import { Contacto } from './layout/Contacto/Contacto';
 import { DetalleProducto } from './components/Detalle Producto/DetalleProducto';
+import Layout from './components/ScrollToTop/Layout';
 
 
 const router = createBrowserRouter([{
     path:'/',
-    element: <Inicio/>,
+    element: 
+    <Layout>
+      <Inicio/>
+    </Layout>,
     errorElement: <NotFount/>,
   },
   {
     path:'/acount/register',
-    element: <CrearCuenta/>,
+    element: 
+    <Layout>
+      <CrearCuenta/>
+    </Layout>,
   },
   {
     path:'/acount/login',
-    element: <IniciarSesion/>,
+    element: 
+    <Layout>
+      <IniciarSesion/>
+    </Layout>,
+    
   },
   {
     path:'/tienda',
-    element: <Tienda/>,
+    element:
+    <Layout>
+      <Tienda/>
+    </Layout>,
   },
   {
     path:'/guia-de-talles',
-    element: <GuiaTalles/>,
+    element: 
+    <Layout>
+      <GuiaTalles/>
+    </Layout>,
   },
   {
     path:'/contacto',
-    element: <Contacto/>,
+    element: 
+    <Layout>
+      <Contacto/>
+    </Layout>,
   },
   {
     path:'/detalle-producto',
-    element: <DetalleProducto/>,
+    element: 
+    <Layout>
+      <DetalleProducto/>
+    </Layout>,
   }
   
 ]);

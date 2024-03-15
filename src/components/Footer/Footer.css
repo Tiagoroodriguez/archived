@@ -28,12 +28,12 @@ footer {
 .desktop-footer-icon {
     margin-right: 19px;
 }
-
-
-.desktop-footer-icon:hover {
+.desktop-footer-icon i:hover {
+    color: rgba(239, 71, 71, 0.5);
     transform: scale(1.2);
     display: inline-block;
 }
+
 
 .suscribirse {
     display:flex;

@@ -17,7 +17,7 @@ export function Contacto() {
 
 
                 <div className='datos-container'>
-                    <label>Correo electronico</label>
+                    <label>Correo electrónico</label>
                     <input type='email' className='mail' />
 
                     <label>Asunto</label>

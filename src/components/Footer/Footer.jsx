@@ -20,7 +20,7 @@ export function Footer() {
                 </div>
 
                 <div className="suscribirse">
-                    <span>Suscrbite para saber nuestro proximo drop</span>
+                    <p>Suscrbite para saber nuestro proximo drop</p>
                     <input type="text" placeholder='ejemplo@gmail.com' className='mail-sub'/>
                 </div>
             </div>
