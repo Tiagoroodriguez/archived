@@ -1,5 +1,5 @@
 # Archived Web
 
-Pagina web oficial de Archived
+Pagina web y tienda oficial de Archived
 
 Desarrollada por Tiago Rodriguez
